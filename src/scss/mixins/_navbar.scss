@@ -1,0 +1,69 @@
+@mixin navbar-breakpoints() {
+
+
+    @media all and (min-width:992px) {
+
+        .navbar {
+            &.navbar-hover {
+
+                & .nav-item:hover .dropdown-menu {
+                    display: block;
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+
+                & .dropdown-toggle:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    .navbar-expand {
+
+        & .dropdown-menu {
+
+            opacity: 0;
+            pointer-events: none;
+            margin: 0;
+            box-shadow: $dropdown-box-shadow;
+            background: $dropdown-bg;
+            animation: animate-navbar-dropdown .25s ease-in-out forwards;
+
+            &.show {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+
+    @each $key in map-keys(map-remove($grid-breakpoints, xs)) {
+
+        @include media-breakpoint-up($key) {
+
+            .navbar-expand-#{$key} {
+
+
+                & .dropdown-menu {
+
+                    opacity: 0;
+                    pointer-events: none;
+                    margin: 0;
+                    box-shadow: $dropdown-box-shadow;
+                    background: $dropdown-bg;
+                    animation: animate-navbar-dropdown .25s ease-in-out forwards;
+
+
+                    &.show {
+                        opacity: 1;
+                        pointer-events: auto;
+
+                    }
+                }
+
+            }
+
+        }
+    }
+}

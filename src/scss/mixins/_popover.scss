@@ -1,0 +1,11 @@
+@mixin popover-variant($className, $color){
+    &.popover-#{$className} {
+        --#{$prefix}popover-bg: var(--#{$prefix}#{$className});
+        --#{$prefix}popover-header-bg: var(--#{$prefix}#{$className});
+        --#{$prefix}popover-body-color: #{color-contrast($color)};
+        --#{$prefix}popover-header-color: #{color-contrast($color)};
+        --#{$prefix}popover-border-color: var(--#{$prefix}#{$className});
+
+    
+    }
+}

@@ -1,0 +1,58 @@
+// Themesin variables
+
+$tui-component-bg: $white !default;
+$tui-heading-color: $gray-800 !default;
+$tui-component-disabled-bg: rgba($gray-400, .5) !default;
+$tui-component-disabled-border-color:$tui-component-disabled-bg !default;
+$tui-component-disabled-color: rgba($gray-500, .9) !default;
+$tui-input-color: $gray-900 !default;
+$tui-navbar-color-light-bg: $gray-800 !default;
+$tui-navbar-color-dark-bg: $gray-100 !default;
+
+$tui-input-soft-bg: $gray-300 !default;
+$tui-input-soft-border-color: $gray-300 !default;
+$tui-input-soft-focus-bg: $gray-300 !default;
+
+
+$tui-btn-icon-size: 3.125rem !default;
+$tui-btn-icon-size-lg: 4.0625rem !default;
+$tui-btn-icon-size-sm: 2.5rem !default;
+// $tui-btn-icon-box-shadow: 0 .25rem .75rem 0 rgba($gray-900, .09),
+// 0 .25rem .9375rem -.125rem rgba($gray-900, .15) !default;
+
+$tui-nav-pills-padding-x: 1.25rem;
+$tui-nav-pills-padding-y: .5rem;
+$tui-nav-pills-box-shadow: 0 .25rem 1.125rem 0 rgba($gray-900, .12),
+0 .5rem .625rem -.375rem rgba($gray-900, .15) !default;
+$tui-nav-link-icon-padding: .375rem !default;
+$tui-nav-link-transition: color .15s ease !default;
+$tui-tab-content-padding: .5rem !default;
+
+$tui-page-link-size-sm: 2rem !default;
+$tui-page-link-size: 2.5rem !default;
+$tui-page-link-size-lg:3rem !default;
+$tui-page-link-shadow: 0 .25rem .75rem 0 rgba($gray-900, .18),
+0 .25rem .9375rem 0 rgba($gray-900, .15) !default;
+$tui-page-item-padding-x: .1875rem !default;
+
+
+$tui-icon-font-family: "Font Awesome 5 Free" !default;
+
+$tui-arrow-down-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'  width='15' height='15' viewBox='0 0 256 256' fill='rgba(9,15,63,.5)'><polygon points='225.813, 48.907 128, 146.72 30.187, 48.907 0, 79.093 128, 207.093 256, 79.093'/></svg>") !default;
+
+
+$tui-card-segment-bg: $gray-900 !default;
+
+$tui-dropdown-menu-min-width-xs: 11rem !default;
+$tui-dropdown-menu-min-width-sm: 14rem !default;
+$tui-dropdown-menu-min-width-md: 22rem !default;
+$tui-dropdown-menu-min-width-lg: 30rem !default;
+$tui-dropdown-menu-min-width-xl: 40rem !default;
+
+$tui-dropdown-toggle-icon-code: "\f107" !default;
+$tui-dropup-toggle-icon-code: "\f106" !default;
+$tui-dropstart-toggle-icon-code: "\f104" !default;
+$tui-dropend-toggle-icon-code: "\f105" !default;
+
+$tui-dropdown-icon-font-weight: 600 !default;
+$tui-dropdown-icon-font-size: 75% !default;

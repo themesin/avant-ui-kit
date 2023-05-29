@@ -1,0 +1,6 @@
+@mixin tooltips-variant($name, $color) {
+   
+    #{$name} {
+        --#{$prefix}tooltip-bg: #{$color};
+    }
+}

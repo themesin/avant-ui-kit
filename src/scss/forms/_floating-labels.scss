@@ -1,0 +1,54 @@
+.form-floating {
+
+
+    label {
+        font-size: 1.25rem;
+        opacity: .7;
+        background: $body-bg;
+        background-clip: content-box;
+        height: auto;
+        line-height: $line-height-lg;
+    }
+
+    .form-control:disabled+label,
+    .form-control.disabled+label {
+        background: none;
+    }
+
+    .card & label,
+    .card & .form-control.form-control-focus~label,
+    .card & .form-control:not(:placeholder-shown)~label {
+        background: $card-bg;
+        background-clip: content-box;
+    }
+
+    .modal-body & label,
+    .modal-body & .form-control.form-control-focus~label,
+    .modal-body & .form-control:not(:placeholder-shown)~label {
+        background: $modal-content-bg;
+        background-clip: content-box;
+    }
+
+    .form-control:focus~label,
+    .form-control:not(:placeholder-shown)~label,
+    .form-control-plaintext~label,
+    .form-select~label {
+        color: $input-focus-border-color;
+        opacity: 1;
+        padding-bottom: 0;
+        padding-top: 0;
+        border-radius: $border-radius-pill;
+        background-clip: padding-box !important;
+    }
+
+    .form-control:focus~label::after,
+    .form-control:not(:placeholder-shown)~label::after,
+    .form-control-plaintext~label::after,
+    .form-select~label::after{
+        background-color: transparent;
+    }
+
+    &~& {
+        margin-top: 1.25rem;
+    }
+}

@@ -1,0 +1,6 @@
+@mixin list-group-variant($className, $color) {
+
+    .list-group-item-#{$className} {
+        --#{$prefix}list-group-action-hover-color: #{color-contrast($color)};
+    }
+}

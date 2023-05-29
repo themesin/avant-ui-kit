@@ -1,0 +1,35 @@
+<html lang="en">
+@@include("./_header.html", {"path":"..", "theme":"avant"})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"avant"})
+
+    <main>
+
+        <div class="content-header">
+            <div class="container">
+                <div class="row mb-10">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Forms</h1>
+                        <p class="lead opacity-75 mt-3">
+                            Form control styles, layout options, and custom components for creating a wide variety of
+                            forms
+                        </p>
+                    </div>
+                </div>
+                @@include("./forms/_index.html", {"path":".."})
+                
+            </div>
+        </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"avant"})
+
+    @@include("./_scripts.html", {"path":"..", "theme":"avant"})
+
+
+</body>
+
+</html>

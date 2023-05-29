@@ -1,0 +1,34 @@
+<html lang="en">
+@@include("./_header.html", {"path":"..", "theme":"avant"})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"avant"})
+
+    <main>
+
+        <div class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4">Form Control</h1>
+                        <p class="lead opacity-75 mt-3">
+                            Form control styles, layout options, and custom components for creating a wide variety of
+                            forms
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         @@include("./forms/_form-control.html", {"path":".."})
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"avant"})
+
+    @@include("./_scripts.html", {"path":"..", "theme":"avant"})
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html lang="en">
+@@include("./_header.html", {"path":"..", "theme":"avant"})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"avant"})
+
+    <main>
+
+        <div class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Close Button</h1>
+                        <p class="lead opacity-75 mt-3">
+                            A generic close button for dismissing content like modals and alerts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="container elements-section elements-section-space">
+             <div class="row">
+                 <div class="col-12">
+                     @@include("./components/_close.html", {"path":".."})
+                 </div>
+             </div>
+         </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"avant"})
+
+    @@include("./_scripts.html", {"path":"..", "theme":"avant"})
+
+
+</body>
+
+</html>

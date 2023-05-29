@@ -1,0 +1,27 @@
+$opacities: ("opacitiy": (property: opacity,
+        values: (10: .1,
+            15:.15,
+            20:.2,
+            30: .3,
+            35: .35,
+            40:.4,
+            45:.45,
+            55:.55,
+            60:.6,
+            65:.65,
+            70: .7,
+            80:.8,
+            85:.85,
+            90:.9,
+            95:.95))) !default;
+
+$z-index:("z-index": (property: z-index,
+        values: (n2:-2,
+            n1: -1,
+            0: 0,
+            1: 1,
+            2: 2,
+            3: 3),
+    )) !default;
+
+$utilities: map-merge($opacities, $z-index) !default;

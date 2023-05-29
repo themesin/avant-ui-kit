@@ -1,0 +1,4 @@
+@each $key,
+$value in $theme-colors {
+    @include tooltips-variant(".tooltip-#{$key}", $value);
+}

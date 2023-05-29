@@ -1,0 +1,56 @@
+<html lang="en">
+@@include("./_header.html", {"path":"..", "theme":"avant"})
+
+<body class="d-flex h-100">
+    <div class="d-flex p-4 flex-column mx-auto w-100 h-100">
+        <header class="mb-auto d-flex justify-content-between align-items-center">
+            <a href="#!" class="navbar-brand">
+                <img src="../assets/img/logo.svg" alt="logo">
+            </a>
+            <div class="">
+                <small class="me-lg-2 d-none d-lg-inline-block">Already have an Account?</small>
+                <a href="../pages/sign-in.html" class="text-dark fs-6 text-end p-0 m-0">Sign
+                    in</a>
+            </div>
+        </header>
+        <main>
+            <div class="px-2 mx-auto mt-1" style="max-width: 42rem;">
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-center mb-3">
+                    <button class="btn btn-auth btn-sm mt-3 me-sm-2" type="button">
+                        <img src="../assets/img/logos/google-logo.svg" alt="google-logo">
+                        <span class="text-dark">login via Google</span>
+                    </button>
+                    <button class="btn btn-auth btn-sm mt-3" type="button">
+                        <img src="../assets/img/logos/github-logo.svg" alt="github-logo">
+                        <span class="text-dark">login via Github</span>
+                    </button>
+                </div>
+                <div class="section-divider mb-4">
+                    <h6 class="section-text">or</h6>
+                </div>
+                <form action="" class="p-1">
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <label for="email">Email address</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        <label for="password">Pasword</label>
+                    </div>
+                    <div class="form-group d-grid">
+                        <button class="btn btn-primary" type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <footer class="mt-auto d-flex justify-content-center">
+            <a class="fs-6 text-body me-3" href="#!">Privacy Policy</a>
+            <a class="fs-6 text-body" href="#!">Resources</a>
+        </footer>
+    </div>
+
+    @@include("./_scripts.html", {"path":"..", "theme":"avant"})
+</body>
+
+</html>
